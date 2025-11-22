@@ -1,0 +1,29 @@
+
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: #ce162c;
+  --color-secondary: #545454;
+  --color-background: #e9ecf0;
+
+  --font-sans: "Poppins", ui-sans-serif, system-ui;
+}
+
+
+@layer base {
+  /* Hide scrollbar globally but keep scroll behavior */
+  html {
+    -ms-overflow-style: none; /* IE & Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+}
+
