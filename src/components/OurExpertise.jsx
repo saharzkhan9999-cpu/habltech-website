@@ -9,7 +9,7 @@ const OurExpertise = () => {
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
         </svg>
       ),
-      description: "Reach your users in their pockets with intuitive and robust mobile applications. We deliver seamless experiences across iOS and Android, from concept to launch.",
+      description: " Reach your users on their phones with fast and dependable mobile apps. We build smooth iOS and Android apps, and handle everything from idea to launch.",
       features: [
         "Native iOS & Android Development",
         "Cross-Platform Solutions", 
@@ -25,7 +25,7 @@ const OurExpertise = () => {
           <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
       ),
-      description: "Empower your team with high-performance desktop software. We develop secure, cross-platform applications that streamline complex workflows and integrate with your core systems.",
+      description: "We develop secure, cross-platform desktop software designed to automate workflows, boost productivity, and connect smoothly with your core business systems.",
       features: [
         "Custom Business & Productivity Tools",
         "Data-Intensive & Real-Time Applications",
@@ -41,7 +41,7 @@ const OurExpertise = () => {
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
         </svg>
       ),
-      description: "Unify your operations with a tailored Enterprise Resource Planning system. We automate core processes—from supply chain to finance—to provide real-time visibility and drive efficiency.",
+      description: "Bring clarity to your operations with a tailored ERP that automates core tasks and keeps finance, supply chain, and teams aligned in real time.",
       features: [
         "Process Analysis & Workflow Automation",
         "Integrated CRM, HR, and Finance Modules", 
@@ -57,7 +57,7 @@ const OurExpertise = () => {
           <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
-      description: "Solve unique challenges and pioneer new opportunities with cutting-edge technology. We develop bespoke solutions that set you apart.",
+      description: "Empower your business to solve unique challenges and seize new opportunities through custom technology crafted for your competitive advantage.",
       features: [
         "AI & Machine Learning Integration",
         "IoT & Connected Device Ecosystems",
@@ -89,9 +89,9 @@ const OurExpertise = () => {
           </h1>
 
           <p className="text-gray-600 mt-4 text-base sm:text-lg md:text-xl leading-relaxed">
-            Our expertise spans custom software, web, mobile, and desktop app development. 
-            We craft smart digital solutions that help businesses grow, streamline operations, 
-            and stay ahead of the competition.
+            We specialize in customsoftware development across web, mobile, anddesktop
+platforms delivering tailored digital solutions that accelerate growth, optimize operations,
+and give businesses a competitive edge in their market.
           </p>
         </div>
 

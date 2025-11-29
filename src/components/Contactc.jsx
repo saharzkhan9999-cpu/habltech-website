@@ -217,7 +217,7 @@ const Contact = () => {
           {/* Header Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              Let's Start Your Project
+              Let's Start Your <span className='text-primary'>Project</span>
             </h1>
             <p className="text-gray-600 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
               Ready to bring your ideas to life? Get in touch with our team and let's discuss how we can help you achieve your goals.

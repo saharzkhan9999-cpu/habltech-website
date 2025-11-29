@@ -18,6 +18,8 @@ import MedicareHubCaseStudy from "./pages/projects/MedicareHubCaseStudy";
 import ShopnexCaseStudy from "./pages/projects/ShopnexCaseStudy";
 import EdutechProCaseStudy from "./pages/projects/EdutechProCaseStudy";
 import LogisticaAICaseStudy from "./pages/projects/LogisticaAICaseStudy";
+import FAQ from "./pages/Faq";
+import Blog from "./pages/Blog";
 
 
 
@@ -43,6 +45,8 @@ const App = () => {
       <Route path="/case-study/shopnex" element={<ShopnexCaseStudy />} />
       <Route path="/case-study/edutech-pro" element={<EdutechProCaseStudy />} />
       <Route path="/case-study/logistica-ai" element={<LogisticaAICaseStudy />} />
+      <Route path="/faq" element={<FAQ />} />
+       <Route path="/blog" element={<Blog />} />
       
     </Routes>
   );
