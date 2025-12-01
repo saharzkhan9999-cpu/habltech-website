@@ -1,5 +1,6 @@
 import React from "react";
 import { about_pic } from "../assets/app";
+import profilePdf from "../assets/pdf/habltech-profile.pdf"; // Import the PDF file
 
 const AboutHero = () => {
   return (
@@ -62,10 +63,12 @@ const AboutHero = () => {
               Start Your Project
             </a>
             <a
-              href="/portfolio"
+              href={profilePdf}
+              target="_blank"
+              rel="noopener noreferrer"
               className="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:border-primary hover:text-primary hover:scale-105 transition-all duration-300 text-center"
             >
-              View Our Work
+              View Our Profile
             </a>
           </div>
         </div>

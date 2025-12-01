@@ -206,7 +206,7 @@ const Contact = () => {
   return (
     <>
       {/* Main Section */}
-      <section className="w-full px-6 sm:px-10 lg:px-16 mt-[70px] sm:mt-[80px] lg:mt-24 py-20 bg-gradient-to-br from-white via-white/50 to-gray-50 relative overflow-hidden">
+      <section className="w-full px-6 sm:px-10 lg:px-16 mt-[60px] sm:mt-[70px] lg:mt-20 py-20 bg-gradient-to-br from-white via-white/50 to-gray-50 relative overflow-hidden ">
         
         {/* Background Effects - Match your theme */}
         <div className="absolute inset-0 bg-primary/5 blur-[120px] rounded-full -z-10" />

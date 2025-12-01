@@ -1,4 +1,5 @@
 import React from "react";
+import servicePamphletPDF from "../assets/pdf/service-pamphlet-habltech.pdf"; // Import the PDF file
 
 const OurExpertise = () => {
   const expertiseData = [
@@ -89,9 +90,9 @@ const OurExpertise = () => {
           </h1>
 
           <p className="text-gray-600 mt-4 text-base sm:text-lg md:text-xl leading-relaxed">
-            We specialize in customsoftware development across web, mobile, anddesktop
-platforms delivering tailored digital solutions that accelerate growth, optimize operations,
-and give businesses a competitive edge in their market.
+            We specialize in custom software development across web, mobile, and desktop
+            platforms delivering tailored digital solutions that accelerate growth, optimize operations,
+            and give businesses a competitive edge in their market.
           </p>
         </div>
 
@@ -159,20 +160,20 @@ and give businesses a competitive edge in their market.
           ))}
         </div>
 
-        {/* CTA Section - Matching Promise component */}
+        {/* CTA Section - Updated with more descriptive content */}
         <div className="bg-gradient-to-r from-gray-50 to-white/80 rounded-2xl p-8 md:p-12 text-center border border-white/40 backdrop-blur-sm">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            Ready to Leverage Our Expertise?
+            Ready to Build Something Amazing?
           </h3>
           <p className="text-gray-600 mb-8 text-lg max-w-2xl mx-auto leading-relaxed">
-            Let's discuss how our comprehensive development services can bring your vision to life and drive your business forward.
+            Let's discuss how we can apply our proven expertise to deliver outstanding results for your next project.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="/contact"
               className="group/btn inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-xl font-semibold 
-                         hover:bg-primary/90 hover:scale-105 transition-all duration-300 shadow-lg"
+                         hover:bg-primary/90 hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/25"
             >
               <span>Start Your Project</span>
               <svg 
@@ -186,13 +187,16 @@ and give businesses a competitive edge in their market.
               </svg>
             </a>
             
+            {/* Updated button with better description */}
             <a
-              href="/portfolio"
+              href={servicePamphletPDF}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group/btn2 inline-flex items-center gap-3 bg-white text-gray-700 px-8 py-4 rounded-xl font-semibold 
                          hover:bg-gray-50 hover:scale-105 transition-all duration-300
                          border border-gray-200 shadow-sm"
             >
-              <span>View Case Studies</span>
+              <span>Service Brochure</span>
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 className="h-5 w-5 transform group-hover/btn2:translate-x-1 transition-transform duration-300" 
@@ -206,32 +210,19 @@ and give businesses a competitive edge in their market.
             </a>
           </div>
 
-          
-          
-        </div>
-
-        {/* Trust Indicators - Matching Promise component */}
-        <div className="text-center mt-12">
-          <p className="text-gray-500 text-sm font-medium mb-8">PROVEN EXPERTISE ACROSS INDUSTRIES</p>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-8 text-sm text-gray-600">
-            <div className="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
-              <span>Enterprise-Grade Solutions</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-              <span>Cutting-Edge Technologies</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-              <span>Dedicated Teams</span>
-            </div>
+          {/* Trust Indicators */}
+          <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-6 text-sm text-gray-500">
+            {[
+              { text: "Enterprise-Grade Security", icon: "🔒" },
+              { text: "NDA Protection", icon: "📝" },
+              { text: "Agile Methodology", icon: "🔄" },
+              { text: "24/7 Support", icon: "🛠️" }
+            ].map((item, index) => (
+              <div key={index} className="flex items-center gap-2">
+                <span>{item.icon}</span>
+                <span>{item.text}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

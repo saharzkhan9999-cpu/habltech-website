@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import brochurePDF from "../assets/pdf/brochure-habltech.pdf";
 
 const Process = () => {
   const processSteps = [
@@ -93,11 +94,27 @@ const Process = () => {
     }
   ];
 
-  const stats = [
-    { number: "98%", label: "Client Satisfaction" },
-    { number: "150+", label: "Projects Delivered" },
-    { number: "99.9%", label: "On-Time Delivery" },
-    { number: "24/7", label: "Support Available" }
+  const processHighlights = [
+    {
+      icon: "⚡",
+      title: "Fast Start-up",
+      description: "Get your project rolling within 1-2 weeks of kickoff"
+    },
+    {
+      icon: "🔄",
+      title: "Iterative Approach",
+      description: "Regular demos and feedback loops ensure alignment"
+    },
+    {
+      icon: "🔒",
+      title: "Risk Mitigation",
+      description: "Proactive identification and resolution of potential issues"
+    },
+    {
+      icon: "📊",
+      title: "Transparent Reporting",
+      description: "Clear visibility into progress and milestones"
+    }
   ];
 
   return (
@@ -105,7 +122,7 @@ const Process = () => {
       <Navbar />
       
       {/* Main Section */}
-      <section className="w-full px-6 sm:px-10 lg:px-16 mt-[60px] sm:mt-[70px] lg:mt-20 py-20 md:py-24 bg-gradient-to-br from-white via-white/50 to-gray-50 relative overflow-hidden">
+      <section className="w-full px-4 sm:px-6 lg:px-8 mt-24 lg:mt-32 py-20 md:py-24 bg-gradient-to-br from-white via-white/50 to-gray-50 relative overflow-hidden">
         
         {/* Background Effects */}
         <div className="absolute inset-0 bg-primary/5 blur-[120px] rounded-full -z-10"></div>
@@ -131,16 +148,34 @@ const Process = () => {
             </p>
           </div>
 
-          {/* Stats Section */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="bg-white/60 backdrop-blur-md rounded-2xl p-6 border border-white/40 shadow-[0_8px_30px_rgb(0,0,0,0.05)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.1)] hover:translate-y-[-4px] transition-all duration-500">
-                  <div className="text-2xl sm:text-3xl font-bold text-primary mb-2">{stat.number}</div>
-                  <div className="text-gray-600 text-sm font-medium">{stat.label}</div>
-                </div>
+          {/* Process Highlights Section */}
+          <div className="mb-16">
+            <div className="bg-white/60 backdrop-blur-md rounded-2xl p-8 border border-white/40 shadow-[0_8px_30px_rgb(0,0,0,0.05)]">
+              <div className="text-center mb-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
+                  Why Our Process Delivers Results
+                </h3>
+                <p className="text-gray-600 mt-2 max-w-2xl mx-auto text-sm sm:text-base">
+                  Our structured approach combines proven methodologies with flexibility to adapt to your unique needs
+                </p>
               </div>
-            ))}
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {processHighlights.map((highlight, index) => (
+                  <div key={index} className="text-center group">
+                    <div className="w-12 h-12 mx-auto mb-3 bg-primary/10 rounded-xl flex items-center justify-center text-xl group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-300">
+                      {highlight.icon}
+                    </div>
+                    <h4 className="font-bold text-gray-900 mb-1 group-hover:text-primary transition-colors duration-300">
+                      {highlight.title}
+                    </h4>
+                    <p className="text-gray-600 text-xs sm:text-sm leading-tight">
+                      {highlight.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Process Steps with Timeline */}
@@ -328,12 +363,14 @@ const Process = () => {
                 </a>
                 
                 <a
-                  href="/portfolio"
+                  href={brochurePDF}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group/btn2 inline-flex items-center gap-3 bg-white text-gray-700 px-8 py-4 rounded-xl font-semibold 
                            hover:bg-gray-50 hover:scale-105 transition-all duration-300
                            border border-gray-200 shadow-sm"
                 >
-                  <span>See Case Studies</span>
+                  <span>Habltech Brochurer</span>
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     className="h-5 w-5 transform group-hover/btn2:translate-x-1 transition-transform duration-300" 
@@ -341,32 +378,24 @@ const Process = () => {
                     viewBox="0 0 24 24" 
                     stroke="currentColor"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                 </a>
               </div>
 
               {/* Trust Indicators */}
               <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-6 text-sm text-gray-500">
-                <div className="flex items-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                  <span>No upfront costs</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span>24-hour response</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                  <span>100% satisfaction guaranteed</span>
-                </div>
+                {[
+                  { text: "Enterprise-Grade Security", icon: "🔒" },
+                  { text: "NDA Protection", icon: "📝" },
+                  { text: "Agile Methodology", icon: "🔄" },
+                  { text: "24/7 Support", icon: "🛠️" }
+                ].map((item, index) => (
+                  <div key={index} className="flex items-center gap-2">
+                    <span>{item.icon}</span>
+                    <span>{item.text}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

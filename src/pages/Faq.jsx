@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import habltechBrochure1 from "../assets/pdf/habltech-brochure1.pdf"; 
 
 const Faq = () => {
   const [openItems, setOpenItems] = useState({});
@@ -329,12 +330,12 @@ const Faq = () => {
                 </a>
                 
                 <a
-                  href="/services"
+                  href={habltechBrochure1}
                   className="group/btn2 inline-flex items-center gap-3 bg-white text-gray-700 px-8 py-4 rounded-xl font-semibold 
                            hover:bg-gray-50 hover:scale-105 transition-all duration-300
                            border border-gray-200 shadow-sm"
                 >
-                  <span>View Our Services</span>
+                  <span>View Our Brochure</span>
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     className="h-5 w-5 transform group-hover/btn2:translate-x-1 transition-transform duration-300" 

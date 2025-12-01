@@ -1,4 +1,5 @@
 import React from "react";
+import portfolioPDF from "../assets/pdf/portfolio.pdf"; // Import the PDF file
 
 const PastWorkSnapshot = () => {
   const projects = [
@@ -77,7 +78,7 @@ const PastWorkSnapshot = () => {
   ];
 
   return (
-    <section className="w-full px-6 sm:px-10  lg:px-16 py-20 bg-gradient-to-br from-white via-white/50 to-gray-50 relative overflow-hidden">
+    <section className="w-full px-6 sm:px-10 lg:px-16 py-20 bg-gradient-to-br from-white via-white/50 to-gray-50 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-primary/5 blur-[120px] rounded-full -z-10"></div>
       
@@ -168,7 +169,7 @@ const PastWorkSnapshot = () => {
           ))}
         </div>
 
-        {/* CTA Section */}
+        {/* CTA Section - Updated with PDF link */}
         <div className="bg-gradient-to-r from-gray-50 to-white/80 rounded-2xl p-8 md:p-12 text-center border border-white/40 backdrop-blur-sm">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
             Ready to Build Something Amazing?
@@ -195,13 +196,16 @@ const PastWorkSnapshot = () => {
               </svg>
             </a>
             
+            {/* Updated button to open portfolio PDF in new tab */}
             <a
-              href="/portfolio"
+              href={portfolioPDF}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group/btn2 inline-flex items-center gap-3 bg-white text-gray-700 px-8 py-4 rounded-xl font-semibold 
                          hover:bg-gray-50 hover:scale-105 transition-all duration-300
                          border border-gray-200 shadow-sm"
             >
-              <span>View Case Studies</span>
+              <span>View All Projects</span>
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 className="h-5 w-5 transform group-hover/btn2:translate-x-1 transition-transform duration-300" 

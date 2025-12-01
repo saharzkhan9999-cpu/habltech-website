@@ -24,7 +24,7 @@ const Hero = () => {
     },
     {
       title: "Proven US Market Experience",
-      description: "25+ years serving American businesses across 36 states with 1800+ successful projects.",
+      description: "25+ years serving American businesses with 1800+ successful projects.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -33,20 +33,13 @@ const Hero = () => {
     },
     {
       title: "Cost Efficiency",
-      description: "Get Silicon Valley-level talent at 60% lower cost without compromising quality or communication.",
+      description: "Get Silicon Valley-level talent at significantly lower cost without compromising quality or communication.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       )
     }
-  ];
-
-  const stats = [
-    { number: "1800+", label: "US Projects Delivered" },
-    { number: "25+", label: "Years Serving US Clients" },
-    { number: "810+", label: "American Businesses Served" },
-    { number: "36", label: "US States Covered" }
   ];
 
   const usBenefits = [
@@ -72,6 +65,24 @@ const Hero = () => {
     }
   ];
 
+  const keyBenefits = [
+    {
+      icon: "🤝",
+      title: "Seamless Collaboration",
+      description: "Work with teams that integrate smoothly with your existing processes"
+    },
+    {
+      icon: "⚙️",
+      title: "Agile Methodology",
+      description: "Flexible sprints and regular progress updates"
+    },
+    {
+      icon: "📈",
+      title: "Transparent Reporting",
+      description: "Clear visibility into project milestones and deliverables"
+    }
+  ];
+
   return (
     <section className="w-full mt-24 lg:mt-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       
@@ -90,7 +101,7 @@ const Hero = () => {
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 group-hover/trust:scale-110 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
-            Trusted by 810+ US Companies
+            Trusted by Clients Worldwide
           </div>
 
           {/* US-Focused Headline */}
@@ -106,9 +117,9 @@ const Hero = () => {
 
           {/* US-Focused Subtitle */}
           <p className="text-lg sm:text-xl lg:text-2xl mt-6 text-gray-600 leading-relaxed">
-            Get Silicon Valley-caliber engineering talent working in your timezone at{' '}
+            Get Silicon Valley-caliber engineering talent working in your timezone with{' '}
             <span className="font-semibold text-gray-800 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent px-2 py-1 rounded-lg">
-              60% lower cost with zero communication overhead.
+              zero communication overhead.
             </span>
           </p>
 
@@ -124,20 +135,6 @@ const Hero = () => {
                     {benefit.title}
                   </div>
                   <div className="text-gray-600 text-xs leading-tight mt-1">{benefit.description}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Enhanced Stats Bar */}
-          <div className="flex flex-wrap gap-4 sm:gap-6 mt-6 sm:mt-8 justify-center lg:justify-start">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center group/stat">
-                <div className="text-xl sm:text-2xl font-bold text-primary group-hover/stat:scale-110 transition-transform duration-300">
-                  {stat.number}
-                </div>
-                <div className="text-gray-600 text-xs sm:text-sm font-medium max-w-[80px] sm:max-w-[100px] leading-tight">
-                  {stat.label}
                 </div>
               </div>
             ))}
@@ -234,7 +231,7 @@ const Hero = () => {
                 { text: "Native English communication", icon: "💬" },
                 { text: "US data security & compliance expertise", icon: "🔒" },
                 { text: "Proven track record with US companies", icon: "📊" },
-                { text: "60% cost savings vs US agencies", icon: "💰" }
+                { text: "Significant cost savings vs US agencies", icon: "💰" }
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-3 sm:gap-4 text-gray-700 group p-3 rounded-xl hover:bg-white hover:shadow-sm transition-all duration-300">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary/10 rounded-xl flex items-center justify-center group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-300 text-base sm:text-lg">
@@ -280,24 +277,43 @@ const Hero = () => {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </div>
 
-            {/* Cost Comparison */}
-            <div className="mt-6 sm:mt-8 bg-gradient-to-r from-primary/5 to-blue-50 rounded-2xl p-4 sm:p-6 border border-primary/10">
-              <h4 className="font-bold text-gray-900 mb-3 text-center text-sm sm:text-base">Cost Comparison</h4>
-              <div className="grid grid-cols-2 gap-3 sm:gap-4 text-center">
-                <div className="bg-white rounded-xl p-3 sm:p-4 shadow-sm">
-                  <div className="text-lg sm:text-xl lg:text-2xl font-bold text-primary">$60-80/hr</div>
-                  <div className="text-xs sm:text-sm text-gray-600">Our Senior Engineers</div>
-                </div>
-                <div className="bg-white rounded-xl p-3 sm:p-4 shadow-sm">
-                  <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-400 line-through">$150-200/hr</div>
-                  <div className="text-xs sm:text-sm text-gray-600">US Agency Rates</div>
+      {/* Key Benefits Section - Replacing Quick Stats */}
+      <div className="mt-12 sm:mt-16">
+        <div className="bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-6 sm:p-8 border border-white/40">
+          <div className="text-center mb-6 sm:mb-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900">How We Work With You</h3>
+            <p className="text-gray-600 mt-2 max-w-2xl mx-auto text-sm sm:text-base">
+              Our collaborative approach ensures you're involved every step of the way
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+            {keyBenefits.map((benefit, index) => (
+              <div key={index} className="bg-white/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/60 hover:border-primary/20 hover:shadow-lg hover:scale-105 transition-all duration-300 group">
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 mb-3 bg-gradient-to-br from-primary/10 to-primary/20 rounded-xl flex items-center justify-center text-xl sm:text-2xl group-hover:scale-110 transition-transform duration-300">
+                    {benefit.icon}
+                  </div>
+                  <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300">
+                    {benefit.title}
+                  </h4>
+                  <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                    {benefit.description}
+                  </p>
                 </div>
               </div>
-              <div className="text-center mt-2 sm:mt-3 text-xs sm:text-sm text-primary font-semibold">
-                Save 60%+ with same quality & better communication
-              </div>
-            </div>
+            ))}
+          </div>
+          
+          {/* Additional Info */}
+          <div className="mt-6 pt-6 border-t border-gray-200/60 text-center">
+            <p className="text-gray-600 text-sm">
+              <span className="font-semibold text-primary">Transparent communication</span> • <span className="font-semibold text-primary">Regular progress updates</span> • <span className="font-semibold text-primary">Flexible engagement models</span>
+            </p>
           </div>
         </div>
       </div>
@@ -326,25 +342,6 @@ const Hero = () => {
                 </span>
                 <span className="text-xs text-gray-400">{company.type}</span>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Quick Stats Bar */}
-      <div className="mt-12 sm:mt-16 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-4 sm:p-6 border border-white/40">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-          {[
-            { number: "98%", label: "US Client Retention" },
-            { number: "4-8h", label: "Response Time" },
-            { number: "2w", label: "Team Ramp-up" },
-            { number: "60%", label: "Cost Savings" }
-          ].map((stat, index) => (
-            <div key={index} className="text-center group">
-              <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300">
-                {stat.number}
-              </div>
-              <div className="text-gray-600 text-xs sm:text-sm font-medium">{stat.label}</div>
             </div>
           ))}
         </div>

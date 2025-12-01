@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import servicePamphletPDF from "../assets/pdf/service-pamphlet-habltech.pdf"; 
 
 const services = [
   {
@@ -257,69 +258,80 @@ const Services = () => {
             ))}
           </div>
 
-          {/* Enhanced Statistics Section */}
+          {/* Why Choose Us Section - Replacing Statistics */}
           <div className="mb-16">
             <div className="bg-white/60 backdrop-blur-md rounded-2xl p-8 border border-white/40 shadow-[0_8px_30px_rgb(0,0,0,0.05)]">
               <div className="text-center mb-8">
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-                  Trusted by Global Businesses
+                  Why Choose Our Services
                 </h2>
                 <p className="text-gray-600 max-w-2xl mx-auto">
-                  With decades of experience and thousands of successful projects, we deliver exceptional results that drive business growth.
+                  We combine technical expertise with business understanding to deliver solutions that drive real results.
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {[
-                  { number: "1800+", label: "Completed Projects", icon: "📊" },
-                  { number: "25+", label: "Years of Experience", icon: "🎯" },
-                  { number: "810+", label: "Global Customers", icon: "🌍" },
-                  { number: "36", label: "Countries Served", icon: "📍" }
-                ].map((stat, index) => (
-                  <div key={index} className="text-center group">
-                    <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
-                      {stat.icon}
+                  {
+                    icon: "🎯",
+                    title: "Proven Expertise",
+                    description: "Decades of experience delivering successful projects across industries"
+                  },
+                  {
+                    icon: "⚡",
+                    title: "Agile Development",
+                    description: "Flexible, iterative approach with regular client collaboration"
+                  },
+                  {
+                    icon: "🔒",
+                    title: "Enterprise Security",
+                    description: "Industry-standard security protocols and data protection"
+                  },
+                  {
+                    icon: "🔄",
+                    title: "Ongoing Support",
+                    description: "Continuous maintenance and updates for long-term success"
+                  }
+                ].map((item, index) => (
+                  <div key={index} className="group text-center p-6 rounded-xl hover:bg-white/80 hover:shadow-lg transition-all duration-300">
+                    <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-primary/10 to-primary/20 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
+                      {item.icon}
                     </div>
-                    <div className="text-2xl sm:text-3xl font-bold text-primary mb-2">{stat.number}</div>
-                    <div className="text-gray-600 text-sm font-medium">{stat.label}</div>
+                    <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm">
+                      {item.description}
+                    </p>
                   </div>
                 ))}
               </div>
 
-              {/* Certifications */}
-              <div className="pt-8 border-t border-gray-200/60">
-                <h3 className="text-center text-lg font-semibold text-gray-900 mb-6">Certifications & Partnerships</h3>
-                <div className="flex flex-col sm:flex-row justify-center items-center gap-8">
+              {/* Core Values */}
+              <div className="mt-12 pt-8 border-t border-gray-200/60">
+                <h3 className="text-center text-lg font-semibold text-gray-900 mb-6">Our Core Values</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {[
-                    { 
-                      name: "Microsoft Solutions Partner", 
-                      level: "Gold Certified",
-                      icon: (
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                        </svg>
-                      ),
-                      color: "from-blue-500 to-purple-600"
+                    {
+                      title: "Client-Centric Approach",
+                      description: "We put your business goals at the center of every solution we build"
                     },
-                    { 
-                      name: "CMMi Level 3", 
-                      level: "Process Maturity",
-                      icon: (
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                        </svg>
-                      ),
-                      color: "from-green-500 to-emerald-600"
+                    {
+                      title: "Quality Excellence",
+                      description: "Rigorous testing and best practices ensure reliable, scalable solutions"
+                    },
+                    {
+                      title: "Innovation Focus",
+                      description: "Staying ahead with cutting-edge technologies and modern approaches"
                     }
-                  ].map((cert, index) => (
-                    <div key={index} className="flex items-center gap-4 group">
-                      <div className={`w-16 h-16 bg-gradient-to-br ${cert.color} rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                        {cert.icon}
-                      </div>
-                      <div className="text-left">
-                        <div className="font-bold text-gray-900">{cert.name}</div>
-                        <div className="text-sm text-gray-600">{cert.level}</div>
-                      </div>
+                  ].map((value, index) => (
+                    <div key={index} className="bg-gradient-to-br from-white to-gray-50 rounded-xl p-6 border border-gray-200/60 hover:border-primary/20 transition-all duration-300 group">
+                      <h4 className="font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300">
+                        {value.title}
+                      </h4>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        {value.description}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -386,24 +398,26 @@ const Services = () => {
                   </svg>
                 </a>
                 
-                <a
-                  href="/portfolio"
-                  className="group/btn2 inline-flex items-center gap-3 bg-white text-gray-700 px-8 py-4 rounded-xl font-semibold 
-                           hover:bg-gray-50 hover:scale-105 transition-all duration-300
-                           border border-gray-200 shadow-sm"
-                >
-                  <span>View Our Work</span>
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    className="h-5 w-5 transform group-hover/btn2:translate-x-1 transition-transform duration-300" 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
-                    stroke="currentColor"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                  </svg>
-                </a>
+                  <a
+                               href={servicePamphletPDF}
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               className="group/btn2 inline-flex items-center gap-3 bg-white text-gray-700 px-8 py-4 rounded-xl font-semibold 
+                                          hover:bg-gray-50 hover:scale-105 transition-all duration-300
+                                          border border-gray-200 shadow-sm"
+                             >
+                               <span>Our Service</span>
+                               <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                className="h-5 w-5 transform group-hover/btn2:translate-x-1 transition-transform duration-300" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+                             </a>
               </div>
 
               {/* Trust Indicators */}

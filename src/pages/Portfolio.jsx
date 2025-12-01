@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-
+import portfolioPDF from "../assets/pdf/portfolio.pdf";
 const projects = [
   {
     title: "LIBREBOOKING",
@@ -357,12 +357,14 @@ const Portfolio = () => {
                   </svg>
                 </Link>
                 
-                <Link
-                  to="/portfolio"
-                  className="group/btn2 inline-flex items-center gap-3 bg-white text-gray-700 px-8 py-4 rounded-xl font-semibold 
-                           hover:bg-gray-50 hover:scale-105 transition-all duration-300
-                           border border-gray-200 shadow-sm"
-                >
+                <a
+                              href={portfolioPDF}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="group/btn2 inline-flex items-center gap-3 bg-white text-gray-700 px-8 py-4 rounded-xl font-semibold 
+                                         hover:bg-gray-50 hover:scale-105 transition-all duration-300
+                                         border border-gray-200 shadow-sm"
+                            >
                   <span>View All Projects</span>
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -374,7 +376,7 @@ const Portfolio = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                   </svg>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
