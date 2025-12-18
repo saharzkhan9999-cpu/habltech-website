@@ -4,7 +4,7 @@ import profilePdf from "../assets/pdf/habltech-profile.pdf"; // Import the PDF f
 
 const AboutHero = () => {
   return (
-    <section className="w-full px-6 sm:px-10 lg:px-16 mt-24 md:mt-32 py-12 lg:py-20 bg-gradient-to-br from-white via-white/50 to-gray-50 relative overflow-hidden">
+    <section className=" w-full px-4 sm:px-6 lg:px-8  mt-16 py-12 lg:py-20 bg-gradient-to-br from-white via-white/50 to-gray-50 relative overflow-hidden max-w-7xl mx-auto">
       
       {/* Added background effects */}
       <div className="absolute inset-0 bg-primary/5 blur-[120px] rounded-full -z-10" />

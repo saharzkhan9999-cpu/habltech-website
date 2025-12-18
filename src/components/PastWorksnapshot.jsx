@@ -1,5 +1,5 @@
 import React from "react";
-import portfolioPDF from "../assets/pdf/portfolio.pdf"; // Import the PDF file
+import portfolioPDF from "../assets/pdf/portfolio-compressed.pdf"; // Import the PDF file
 
 const PastWorkSnapshot = () => {
   const projects = [

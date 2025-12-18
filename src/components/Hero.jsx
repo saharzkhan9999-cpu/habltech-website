@@ -84,7 +84,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="w-full mt-24 lg:mt-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section className="w-full mt-20 py-8 lg:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       
       {/* Enhanced Hero Section with Fixed Layout */}
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 xl:gap-16 relative">
@@ -161,7 +161,7 @@ const Hero = () => {
               </svg>
             </Link>
             <Link
-              to="https://calendly.com/habltech"
+              to="https://calendly.com/habltech/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="group/cta2 border-2 border-gray-300 text-gray-800 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold 

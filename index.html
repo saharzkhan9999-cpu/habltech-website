@@ -2,38 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/habltech.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <!-- Preconnect & Preload Critical Resources -->
+    <link rel="preconnect" href="https://habltech.com" crossorigin>
+    <link rel="dns-prefetch" href="https://habltech.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <!-- Primary Meta Tags -->
-    <title>Habltech - Innovative Technology Soions</title>
-    <meta name="description" content="Habltech provides cutting-edge technology solutions and services to help businesses thrive in the digital age. Discover our innovative products and expertise.">
-    <meta name="keywords" content="technology solutions, software development, IT services, digital transformation, habltech">
+    <title>Habltech | Technology Solutions & IT Services Company | Software Development</title>
+    <meta name="description" content="Habltech provides cutting-edge IT solutions, software development & digital transformation services. We help businesses innovate & grow with custom technology solutions.">
+    <meta name="keywords" content="IT services, software development company, technology solutions, digital transformation, web development, mobile apps, cloud solutions, IT consulting, custom software">
     <meta name="author" content="Habltech">
     <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://habltech.com/">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://habltech.com/">
-    <meta property="og:title" content="Habltech - Innovative Technology Solutions">
+    <meta property="og:title" content="Habltech | Technology Solutions & IT Services Company">
     <meta property="og:description" content="Habltech provides cutting-edge technology solutions and services to help businesses thrive in the digital age.">
     <meta property="og:image" content="https://habltech.com/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Habltech">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://habltech.com/">
-    <meta property="twitter:title" content="Habltech - Innovative Technology Solutions">
+    <meta property="twitter:title" content="Habltech | Technology Solutions & IT Services Company">
     <meta property="twitter:description" content="Habltech provides cutting-edge technology solutions and services to help businesses thrive in the digital age.">
     <meta property="twitter:image" content="https://habltech.com/images/twitter-image.jpg">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://habltech.com/">
     
     <!-- Structured Data / Schema.org -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
+      "@id": "https://habltech.com/#organization",
       "name": "Habltech",
       "url": "https://habltech.com/",
       "logo": "https://habltech.com/images/logo.png",
@@ -49,18 +60,77 @@
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+1-555-123-4567",
-        "contactType": "customer service"
+        "contactType": "customer service",
+        "contactOption": "TollFree",
+        "areaServed": "US"
       },
       "sameAs": [
         "https://www.facebook.com/habltech",
         "https://www.twitter.com/habltech",
-        "https://www.linkedin.com/company/habltech"
+        "https://www.linkedin.com/company/habltech",
+        "https://www.instagram.com/habltech"
       ]
     }
     </script>
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Habltech",
+      "image": "https://habltech.com/images/office.jpg",
+      "@id": "https://habltech.com",
+      "url": "https://habltech.com/",
+      "telephone": "+1-555-123-4567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Tech Street",
+        "addressLocality": "Tech City",
+        "addressRegion": "TC",
+        "postalCode": "12345",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.7128,
+        "longitude": -74.0060
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+    
+    <!-- Fonts with display=swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Analytics Tracking (Add your IDs) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/index.css">
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- GSC Verification (Add your code) -->
+    <meta name="google-site-verification" content="your-verification-code-here" />
   </body>
 </html>

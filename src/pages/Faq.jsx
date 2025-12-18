@@ -147,7 +147,7 @@ const Faq = () => {
       <Navbar />
 
       {/* Hero Section - Matching Portfolio Theme */}
-      <section className="w-full px-6 sm:px-10 lg:px-16 py-20 md:py-24 bg-gradient-to-br from-white via-white/50 to-gray-50 mt-[60px] sm:mt-[70px] lg:mt-20 overflow-hidden relative">
+      <section className="w-full px-6 sm:px-10 lg:px-16 py-8 lg:py-12 bg-gradient-to-br from-white via-white/50 to-gray-50 mt-16 low-hidden relativ">
         
         {/* Background Effects - Matching Portfolio */}
         <div className="absolute inset-0 bg-primary/5 blur-[120px] rounded-full -z-10"></div>

@@ -140,7 +140,7 @@ const Services = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="w-full px-6 sm:px-10 lg:px-16 py-20 md:py-24 bg-gradient-to-br from-white via-white/50 to-gray-50 mt-[60px] sm:mt-[70px] lg:mt-20 relative overflow-hidden">
+      <section className="w-full px-4 sm:px-10 lg:px-6 py-8 lg:py-12 mb-2 bg-gradient-to-br from-white via-white/50 to-gray-50 mt-16  relative overflow-hidden max-w-7xl mx-auto">
         
         {/* Background Effects */}
         <div className="absolute inset-0 bg-primary/5 blur-[120px] rounded-full -z-10"></div>

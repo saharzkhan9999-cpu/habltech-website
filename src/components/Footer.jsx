@@ -59,8 +59,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full bg-white border-t border-gray-100">
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-16">
+    <footer className="w-full bg-white border-t border-gray-100 max-w-7xl mx-auto ">
+      <div className="px-6 sm:px-10 lg:px-16 py-16">
         
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mb-12">
@@ -201,7 +201,7 @@ const Footer = () => {
             </div>
             
             <div className="text-gray-500 text-sm">
-              Powered by <span className="text-primary font-medium">HABL</span>
+              Powered by <span className="text-primary font-medium">HABL<span className="text-secondary">TECH</span></span>
             </div>
           </div>
         </div>

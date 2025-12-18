@@ -86,7 +86,7 @@ const approachData = [
 
 const OurApproach = () => {
   return (
-    <section className="relative w-full px-6 sm:px-10 lg:px-16 py-20 lg:py-24 bg-gradient-to-br from-white via-white/50 to-gray-50 overflow-hidden">
+    <section className="relative w-full px-6 sm:px-10 lg:px-16 py-20 lg:py-24 bg-gradient-to-br from-white via-white/50 to-gray-50 overflow-hidden mt-2 max-w-7xl mx-auto">
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0 bg-primary/10 blur-[120px] rounded-full -z-10" />
       <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-secondary/10 blur-[100px] rounded-full -z-10" />

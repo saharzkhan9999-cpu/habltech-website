@@ -5,11 +5,13 @@ import Footer from '../components/Footer'
 
 const Contact = () => {
   return (
-    <section>
+    <>
       <Navbar/>
+      <section className='w-full mt-16 mb-2 '>
       <Contactc/>
+      </section>
       <Footer/>
-    </section>
+    </>
   )
 }
 

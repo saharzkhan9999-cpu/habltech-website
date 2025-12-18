@@ -83,7 +83,7 @@ const Navbar = () => {
         </Link>
 
         {/* DESKTOP MENU */}
-        <div className="hidden lg:flex items-center  ">
+        <div className="hidden lg:flex items-center space-x-1 xl:space-x-2">
           <ul className="flex gap-4 xl:gap-6 items-center text-[15px] xl:text-[16px] font-medium">
             {navItems.map((item) => (
               <li key={item.path}>
@@ -112,7 +112,7 @@ const Navbar = () => {
           <div className="ml-4 xl:ml-6">
             <Link
               to="/contact"
-              className="bg-primary text-white px-5 py-2.5 rounded-xl font-medium hover:bg-primary/90 
+              className="bg-primary text-white px-5 py-2.5 rounded-lg font-medium hover:bg-primary/90 
                          hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/25 text-nowrap text-sm xl:text-base"
               onClick={handleNavigation}
             >
