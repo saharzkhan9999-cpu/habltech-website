@@ -41,8 +41,8 @@ const Contact = () => {
         </svg>
       ),
       title: "Call Us",
-      detail: "+(021) 37120787",
-      link: "tel:02137120787"
+      detail: "+92 (21) 37120787",
+      link: "tel:+922137120787"
     },
     {
       icon: (
