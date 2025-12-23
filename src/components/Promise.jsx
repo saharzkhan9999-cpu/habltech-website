@@ -2,8 +2,8 @@ import React from "react";
 
 const promisePoints = [
   {
-    title: "Seamless Alignment With U.S Time Zones",
-    description: "Work with a team that operates during your business hours for real-time collaboration and instant communication",
+    title: "Seamless Alignment With Your Schedule",
+    description: "Work with a team that integrates fully into your operating hours for real-time collaboration and efficient communication.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />

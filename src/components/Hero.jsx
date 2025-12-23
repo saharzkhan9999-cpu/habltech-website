@@ -5,90 +5,137 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   const features = [
     {
-      title: "US Timezone Alignment",
-      description: "Work with teams that operate fully within US business hours for real-time collaboration.",
+      title: "Fully Aligned With Your Schedule",
+      description:
+        "Our teams integrate seamlessly with your operating hours, ensuring smooth collaboration, timely execution, and reliable delivery.",
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
         </svg>
-      )
+      ),
     },
     {
-      title: "Cultural Alignment",
-      description: "Teams fluent in American business culture, communication styles, and work ethics.",
+      title: "Business Culture Expertise",
+      description:
+        "Teams well-versed in international business norms, communication standards, and collaborative practices.",
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+          />
         </svg>
-      )
+      ),
     },
     {
-      title: "Proven US Market Experience",
-      description: "25+ years serving American businesses with 1800+ successful projects.",
+      title: "Proven Global Market Experience",
+      description:
+        "Delivering successful projects for software companies worldwide with a strong track record of excellence.",
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+          />
         </svg>
-      )
+      ),
     },
     {
       title: "Cost Efficiency",
-      description: "Get Silicon Valley-level talent at significantly lower cost without compromising quality or communication.",
+      description:
+        "Access high-quality engineering talent at a competitive cost without compromising quality, speed, or communication.",
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={1.5}
+            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
         </svg>
-      )
-    }
+      ),
+    },
   ];
 
   const usBenefits = [
     {
       icon: "🏢",
-      title: "US Business Hours",
-      description: "Full overlap with EST, CST, PST time zones"
+      title: "Business-Hour Alignment",
+      description: "Full overlap with your team’s working hours",
     },
     {
       icon: "💬",
       title: "Native English Speakers",
-      description: "Fluent communication with your team"
+      description: "Fluent communication with your team",
     },
     {
       icon: "🔒",
-      title: "US Data Compliance",
-      description: "GDPR, CCPA, and industry-specific compliance"
+      title: "Global Data Compliance",
+      description: "Aligned with GDPR, CCPA, and relevant industry regulations",
     },
     {
       icon: "⚡",
       title: "Rapid Scaling",
-      description: "Scale teams up/down within 2 weeks"
-    }
+      description: "Scale teams up/down within 2 weeks",
+    },
   ];
 
   const keyBenefits = [
     {
       icon: "🤝",
       title: "Seamless Collaboration",
-      description: "Work with teams that integrate smoothly with your existing processes"
+      description:
+        "Work with teams that integrate smoothly with your existing processes",
     },
     {
       icon: "⚙️",
       title: "Agile Methodology",
-      description: "Flexible sprints and regular progress updates"
+      description: "Flexible sprints and regular progress updates",
     },
     {
       icon: "📈",
       title: "Transparent Reporting",
-      description: "Clear visibility into project milestones and deliverables"
-    }
+      description: "Clear visibility into project milestones and deliverables",
+    },
   ];
 
   return (
     <section className="w-full mt-20 py-8 lg:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      
       {/* Enhanced Hero Section with Fixed Layout */}
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 xl:gap-16 relative">
-        
         {/* Background Effects */}
         <div className="absolute top-10 left-10 w-72 h-72 bg-primary/10 blur-[100px] rounded-full -z-10 animate-pulse"></div>
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-secondary/10 blur-[80px] rounded-full -z-10 animate-pulse delay-1000"></div>
@@ -98,35 +145,52 @@ const Hero = () => {
         <div className="flex flex-col lg:w-1/2 text-center lg:text-left">
           {/* US-Focused Trust Badge */}
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary/10 to-blue-50 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6 mx-auto lg:mx-0 w-fit border border-primary/20 hover:bg-primary/15 transition-all duration-300 group/trust">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 group-hover/trust:scale-110 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4 group-hover/trust:scale-110 transition-transform duration-300"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+              />
             </svg>
             Trusted by Clients Worldwide
           </div>
 
           {/* US-Focused Headline */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-            Your US-Aligned{' '}
+          <h1 className=" group  text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.2] sm:leading-[1.15] lg:leading-[1.1] ">
+            Your Dedicated{" "}
             <span className="text-primary relative inline-block">
               Engineering Team
-              <span className="absolute bottom-2 left-0 w-full h-2 bg-primary/20 -z-10 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
             </span>
             <br />
-            That Works Like In-House
+            That Works Like an Extension of
+            <span className="text-primary relative inline-block">
+              Your In-House Team
+            </span>
           </h1>
 
           {/* US-Focused Subtitle */}
           <p className="text-lg sm:text-xl lg:text-2xl mt-6 text-gray-600 leading-relaxed">
-            Get Silicon Valley-caliber engineering talent working in your timezone with{' '}
+            A skilled engineering team that aligns with your working hours and
+            integrates seamlessly into{" "}
             <span className="font-semibold text-gray-800 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent px-2 py-1 rounded-lg">
-              zero communication overhead.
+              your existing workflows.
             </span>
           </p>
 
           {/* US Benefits Grid */}
           <div className="grid grid-cols-2 gap-3 sm:gap-4 mt-6 sm:mt-8">
             {usBenefits.map((benefit, index) => (
-              <div key={index} className="flex items-center gap-3 text-left group/benefit">
+              <div
+                key={index}
+                className="flex items-center gap-3 text-left group/benefit"
+              >
                 <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary/10 rounded-xl flex items-center justify-center group-hover/benefit:scale-110 group-hover/benefit:bg-primary/20 transition-all duration-300 text-base sm:text-lg">
                   {benefit.icon}
                 </div>
@@ -134,7 +198,9 @@ const Hero = () => {
                   <div className="font-semibold text-gray-900 text-xs sm:text-sm group-hover/benefit:text-primary transition-colors duration-300 leading-tight">
                     {benefit.title}
                   </div>
-                  <div className="text-gray-600 text-xs leading-tight mt-1">{benefit.description}</div>
+                  <div className="text-gray-600 text-xs leading-tight mt-1">
+                    {benefit.description}
+                  </div>
                 </div>
               </div>
             ))}
@@ -150,14 +216,19 @@ const Hero = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover/cta:translate-x-full transition-transform duration-1000"></div>
               <span className="relative">Get US-Aligned Team</span>
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                className="h-4 w-4 sm:h-5 sm:w-5 transform group-hover/cta:translate-x-1 transition-transform duration-300 relative" 
-                fill="none" 
-                viewBox="0 0 24 24" 
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 sm:h-5 sm:w-5 transform group-hover/cta:translate-x-1 transition-transform duration-300 relative"
+                fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
               </svg>
             </Link>
             <Link
@@ -168,14 +239,19 @@ const Hero = () => {
                          hover:border-primary hover:text-primary hover:scale-105 hover:shadow-md
                          transition-all duration-300 flex items-center justify-center gap-2 bg-white/80 backdrop-blur-sm text-sm sm:text-base"
             >
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                className="h-4 w-4 sm:h-5 sm:w-5 group-hover/cta2:scale-110 transition-transform duration-300" 
-                fill="none" 
-                viewBox="0 0 24 24" 
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 sm:h-5 sm:w-5 group-hover/cta2:scale-110 transition-transform duration-300"
+                fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
               </svg>
               <span>Schedule US Call</span>
             </Link>
@@ -192,11 +268,11 @@ const Hero = () => {
               alt="HABLTECH US-Aligned Engineering Team"
               className="relative w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500 rounded-2xl shadow-2xl"
             />
-            
+
             {/* Floating Elements */}
             <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-12 h-12 sm:w-16 sm:h-16 bg-primary/10 rounded-2xl blur-lg group-hover:scale-110 transition-transform duration-500"></div>
             <div className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-10 h-10 sm:w-14 sm:h-14 bg-secondary/10 rounded-2xl blur-lg group-hover:scale-110 transition-transform duration-500 delay-200"></div>
-            
+
             {/* US Timezone Badge */}
             <div className="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 bg-gradient-to-r from-blue-600 to-red-600 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg">
               🕐 US Timezone Aligned
@@ -208,32 +284,45 @@ const Hero = () => {
       {/* Enhanced Who We Are + What We Do Section */}
       <div className="bg-white/60 backdrop-blur-md rounded-2xl p-6 sm:p-8 lg:p-12 mt-12 sm:mt-16 lg:mt-20 border border-white/40 shadow-[0_8px_30px_rgb(0,0,0,0.05)] hover:shadow-[0_20px_50px_rgb(0,0,0,0.1)] transition-all duration-500">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16">
-          
           {/* Enhanced Who We Are */}
           <div className="flex flex-col justify-center">
             <div className="inline-flex items-center gap-2 text-primary font-semibold text-sm mb-4">
               <div className="w-2 h-2 bg-primary rounded-full"></div>
-              WHY CHOOSE US FOR US MARKET
+              Why Leading Software Teams Work With Us
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
-              Built for American Businesses
+              Built for Modern Software Businesses
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed mb-6 sm:mb-8">
-              We're not just another offshore provider. We're your US-aligned engineering partner that understands 
-              American business culture, operates in your timezone, and delivers with Silicon Valley standards.
+              We’re not just another offshore provider. We operate as a
+              strategic engineering partner that understands how high-performing
+              software teams work, aligns with your operating hours, and
+              delivers to globally recognized quality standards.
             </p>
-            
+
             {/* Enhanced Info List */}
             <div className="space-y-3 sm:space-y-4">
               {[
-                { text: "Senior engineers fluent in US business culture", icon: "🇺🇸" },
-                { text: "Full EST/CST/PST timezone coverage", icon: "🕐" },
+                {
+                  text: "Senior Engineers Aligned with International Business Standards",
+                  icon: "🇺🇸",
+                },
+                { text: "Always Aligned With Your Working Hours", icon: "🕐" },
                 { text: "Native English communication", icon: "💬" },
-                { text: "US data security & compliance expertise", icon: "🔒" },
-                { text: "Proven track record with US companies", icon: "📊" },
-                { text: "Significant cost savings vs US agencies", icon: "💰" }
+                { text: "Data Protection & Compliance Expertise", icon: "🔒" },
+                {
+                  text: "Proven Success with Leading Software Teams",
+                  icon: "📊",
+                },
+                {
+                  text: "Cost-Effective Solutions for Software Companies",
+                  icon: "💰",
+                },
               ].map((item, index) => (
-                <div key={index} className="flex items-center gap-3 sm:gap-4 text-gray-700 group p-3 rounded-xl hover:bg-white hover:shadow-sm transition-all duration-300">
+                <div
+                  key={index}
+                  className="flex items-center gap-3 sm:gap-4 text-gray-700 group p-3 rounded-xl hover:bg-white hover:shadow-sm transition-all duration-300"
+                >
                   <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary/10 rounded-xl flex items-center justify-center group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-300 text-base sm:text-lg">
                     {item.icon}
                   </div>
@@ -246,54 +335,89 @@ const Hero = () => {
           </div>
 
           {/* Enhanced What We Do */}
-          <div>
-            <div className="inline-flex items-center gap-2 text-primary font-semibold text-sm mb-4">
-              <div className="w-2 h-2 bg-primary rounded-full"></div>
-              OUR US ADVANTAGE
-            </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 sm:mb-8">
-              Why US Companies Choose Us
-            </h2>
+         {/* Enhanced What We Do Section - Modern Layout */}
+<div>
+  <div className="inline-flex items-center gap-2 text-primary font-semibold text-sm mb-4">
+    <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+    OUR ADVANTAGE
+  </div>
+  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 sm:mb-8">
+    Why Teams Choose Us
+  </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-              {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className="flex items-start gap-3 sm:gap-4 p-4 sm:p-6 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 group cursor-pointer border border-transparent hover:border-primary/10 hover:scale-105"
-                >
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center rounded-xl group-hover:scale-110 group-hover:from-primary/20 group-hover:to-primary/10 transition-all duration-300 flex-shrink-0 shadow-sm">
-                    <div className="text-primary group-hover:scale-110 transition-transform duration-300">
-                      {feature.icon}
-                    </div>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-base sm:text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors duration-300 mb-2">
-                      {feature.title}
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed text-xs sm:text-sm group-hover:text-gray-700 transition-colors duration-300">
-                      {feature.description}
-                    </p>
-                  </div>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {features.map((feature, index) => (
+      <div
+        key={index}
+        className="group"
+      >
+        <div className="bg-gradient-to-br from-white to-gray-50/50 rounded-xl p-5 sm:p-6 border border-gray-100 hover:border-primary/30 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 h-full">
+          
+          {/* Icon with number badge */}
+          <div className="flex items-start justify-between mb-4">
+            <div className="relative">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                <div className="text-primary">
+                  {feature.icon}
                 </div>
-              ))}
+              </div>
+              <div className="absolute -top-2 -right-2 w-6 h-6 bg-primary text-white text-xs rounded-full flex items-center justify-center font-bold">
+                {index + 1}
+              </div>
+            </div>
+            
+            <div className="hidden sm:block opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="text-primary text-sm font-medium px-3 py-1 bg-primary/10 rounded-full">
+                Advantage
+              </div>
+            </div>
+          </div>
+          
+          {/* Content */}
+          <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300">
+            {feature.title}
+          </h3>
+          
+          <p className="text-gray-600 text-sm leading-relaxed mb-4">
+            {feature.description}
+          </p>
+          
+          {/* Bottom line */}
+          <div className="pt-3 border-t border-gray-100">
+            <div className="flex items-center gap-2">
+              <div className="h-1 flex-1 bg-gray-100 rounded-full overflow-hidden">
+                <div className="h-full bg-gradient-to-r from-primary/30 to-primary/10 rounded-full w-0 group-hover:w-full transition-all duration-500"></div>
+              </div>
+              <span className="text-xs text-gray-500">Key Benefit</span>
             </div>
           </div>
         </div>
       </div>
+    ))}
+  </div>
+</div>
+</div>
+</div>
 
       {/* Key Benefits Section - Replacing Quick Stats */}
       <div className="mt-12 sm:mt-16">
         <div className="bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-6 sm:p-8 border border-white/40">
           <div className="text-center mb-6 sm:mb-8">
-            <h3 className="text-xl sm:text-2xl font-bold text-gray-900">How We Work With You</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
+              How We Work With You
+            </h3>
             <p className="text-gray-600 mt-2 max-w-2xl mx-auto text-sm sm:text-base">
-              Our collaborative approach ensures you're involved every step of the way
+              Our collaborative approach ensures you're involved every step of
+              the way
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             {keyBenefits.map((benefit, index) => (
-              <div key={index} className="bg-white/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/60 hover:border-primary/20 hover:shadow-lg hover:scale-105 transition-all duration-300 group">
+              <div
+                key={index}
+                className="bg-white/80 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/60 hover:border-primary/20 hover:shadow-lg hover:scale-105 transition-all duration-300 group"
+              >
                 <div className="flex flex-col items-center text-center">
                   <div className="w-12 h-12 sm:w-14 sm:h-14 mb-3 bg-gradient-to-br from-primary/10 to-primary/20 rounded-xl flex items-center justify-center text-xl sm:text-2xl group-hover:scale-110 transition-transform duration-300">
                     {benefit.icon}
@@ -308,11 +432,21 @@ const Hero = () => {
               </div>
             ))}
           </div>
-          
+
           {/* Additional Info */}
           <div className="mt-6 pt-6 border-t border-gray-200/60 text-center">
             <p className="text-gray-600 text-sm">
-              <span className="font-semibold text-primary">Transparent communication</span> • <span className="font-semibold text-primary">Regular progress updates</span> • <span className="font-semibold text-primary">Flexible engagement models</span>
+              <span className="font-semibold text-primary">
+                Transparent communication
+              </span>{" "}
+              •{" "}
+              <span className="font-semibold text-primary">
+                Regular progress updates
+              </span>{" "}
+              •{" "}
+              <span className="font-semibold text-primary">
+                Flexible engagement models
+              </span>
             </p>
           </div>
         </div>
@@ -320,14 +454,16 @@ const Hero = () => {
 
       {/* Enhanced Trust Section */}
       <div className="text-center mt-12 sm:mt-16">
-        <p className="text-gray-500 text-sm font-medium mb-6 sm:mb-8 uppercase tracking-wider">Trusted by US Companies Coast to Coast</p>
+        <p className="text-gray-500 text-sm font-medium mb-6 sm:mb-8 uppercase tracking-wider">
+          Trusted by Companies Coast to Coast{" "}
+        </p>
         <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 lg:gap-12 opacity-60 hover:opacity-100 transition-opacity duration-300">
           {[
             { name: "Silicon Valley Startups", logo: "💻", type: "Tech" },
             { name: "NYC Finance", logo: "💳", type: "Finance" },
             { name: "Texas Energy", logo: "⚡", type: "Energy" },
             { name: "Chicago Healthcare", logo: "🏥", type: "Healthcare" },
-            { name: "LA Media", logo: "🎬", type: "Media" }
+            { name: "LA Media", logo: "🎬", type: "Media" },
           ].map((company, index) => (
             <div
               key={index}
@@ -349,15 +485,26 @@ const Hero = () => {
 
       {/* US Timezone Coverage */}
       <div className="mt-8 sm:mt-12 bg-white/60 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/40 text-center">
-        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Full US Timezone Coverage</h3>
+        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
+          Full US Timezone Coverage
+        </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 max-w-2xl mx-auto">
           {[
             { zone: "EST", hours: "9 AM - 6 PM", cities: "NYC, Boston, Miami" },
-            { zone: "CST", hours: "8 AM - 5 PM", cities: "Chicago, Dallas, Houston" },
-            { zone: "PST", hours: "6 AM - 3 PM", cities: "SF, Seattle, LA" }
+            {
+              zone: "CST",
+              hours: "8 AM - 5 PM",
+              cities: "Chicago, Dallas, Houston",
+            },
+            { zone: "PST", hours: "6 AM - 3 PM", cities: "SF, Seattle, LA" },
           ].map((tz, index) => (
-            <div key={index} className="bg-gradient-to-br from-blue-50 to-primary/5 rounded-xl p-3 sm:p-4 border border-blue-100">
-              <div className="text-base sm:text-lg font-bold text-primary">{tz.zone}</div>
+            <div
+              key={index}
+              className="bg-gradient-to-br from-blue-50 to-primary/5 rounded-xl p-3 sm:p-4 border border-blue-100"
+            >
+              <div className="text-base sm:text-lg font-bold text-primary">
+                {tz.zone}
+              </div>
               <div className="text-sm text-gray-600">{tz.hours}</div>
               <div className="text-xs text-gray-500 mt-1">{tz.cities}</div>
             </div>
