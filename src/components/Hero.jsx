@@ -215,7 +215,7 @@ const Hero = () => {
                          flex items-center justify-center gap-2 text-center relative overflow-hidden text-sm sm:text-base"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover/cta:translate-x-full transition-transform duration-1000"></div>
-              <span className="relative">Get US-Aligned Team</span>
+              <span className="relative">Align with Team</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-4 w-4 sm:h-5 sm:w-5 transform group-hover/cta:translate-x-1 transition-transform duration-300 relative"
@@ -253,7 +253,7 @@ const Hero = () => {
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              <span>Schedule US Call</span>
+              <span>Schedule the Call</span>
             </Link>
           </div>
         </div>
@@ -275,7 +275,7 @@ const Hero = () => {
 
             {/* US Timezone Badge */}
             <div className="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 bg-gradient-to-r from-blue-600 to-red-600 text-white px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg">
-              🕐 US Timezone Aligned
+              🕐 Aligned global overlap
             </div>
           </div>
         </div>
